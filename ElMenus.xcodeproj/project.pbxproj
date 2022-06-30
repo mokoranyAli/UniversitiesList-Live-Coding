@@ -7,13 +7,28 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A28EC7142863C981000922E8 /* JustForTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = A28EC7132863C981000922E8 /* JustForTest.swift */; };
 		A29EAD5F285F8E93003A1A7A /* ElMenusApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = A29EAD5E285F8E93003A1A7A /* ElMenusApp.swift */; };
 		A29EAD61285F8E93003A1A7A /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A29EAD60285F8E93003A1A7A /* ContentView.swift */; };
 		A29EAD63285F8E94003A1A7A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A29EAD62285F8E94003A1A7A /* Assets.xcassets */; };
 		A29EAD66285F8E94003A1A7A /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A29EAD65285F8E94003A1A7A /* Preview Assets.xcassets */; };
 		A29EAD70285F8E94003A1A7A /* ElMenusTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A29EAD6F285F8E94003A1A7A /* ElMenusTests.swift */; };
-		A29EAD7A285F8E94003A1A7A /* ElMenusUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A29EAD79285F8E94003A1A7A /* ElMenusUITests.swift */; };
-		A29EAD7C285F8E94003A1A7A /* ElMenusUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A29EAD7B285F8E94003A1A7A /* ElMenusUITestsLaunchTests.swift */; };
+		A29EAD8C285F8EFA003A1A7A /* APISerrvice.swift in Sources */ = {isa = PBXBuildFile; fileRef = A29EAD8B285F8EFA003A1A7A /* APISerrvice.swift */; };
+		A29EAD8E285F8F87003A1A7A /* NetworkError.swift in Sources */ = {isa = PBXBuildFile; fileRef = A29EAD8D285F8F87003A1A7A /* NetworkError.swift */; };
+		A29EAD9A285F9074003A1A7A /* UniversitiesListService.swift in Sources */ = {isa = PBXBuildFile; fileRef = A29EAD99285F9074003A1A7A /* UniversitiesListService.swift */; };
+		A29EAD9C285F90E9003A1A7A /* University.swift in Sources */ = {isa = PBXBuildFile; fileRef = A29EAD9B285F90E9003A1A7A /* University.swift */; };
+		A29EAD9E285F925C003A1A7A /* UniversitiesRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = A29EAD9D285F925C003A1A7A /* UniversitiesRepository.swift */; };
+		A29EADA0285F9307003A1A7A /* LoadUniversitiesUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = A29EAD9F285F9307003A1A7A /* LoadUniversitiesUseCase.swift */; };
+		A29EADA2285F935C003A1A7A /* UniversitiesListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A29EADA1285F935C003A1A7A /* UniversitiesListViewModel.swift */; };
+		A29EADA5285F937B003A1A7A /* BaseViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A29EADA4285F937B003A1A7A /* BaseViewModel.swift */; };
+		A29EADA7285F93AD003A1A7A /* ViewModelState.swift in Sources */ = {isa = PBXBuildFile; fileRef = A29EADA6285F93AD003A1A7A /* ViewModelState.swift */; };
+		A29EADA9285F9525003A1A7A /* UniversitiesListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A29EADA8285F9525003A1A7A /* UniversitiesListView.swift */; };
+		A29EADAD285F97C5003A1A7A /* MockAPIService.swift in Sources */ = {isa = PBXBuildFile; fileRef = A29EADAC285F97C5003A1A7A /* MockAPIService.swift */; };
+		A29EADB4285F98C9003A1A7A /* UniversitiesListServiceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A29EADB3285F98C9003A1A7A /* UniversitiesListServiceTests.swift */; };
+		A29EADB6285F9921003A1A7A /* Universities.json in Resources */ = {isa = PBXBuildFile; fileRef = A29EADB5285F9921003A1A7A /* Universities.json */; };
+		A29EADB9285F9B4D003A1A7A /* UniversitiesRepositoryTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A29EADB8285F9B4D003A1A7A /* UniversitiesRepositoryTests.swift */; };
+		A29EADBD285F9C59003A1A7A /* MockSuccessUniversitiesListService.swift in Sources */ = {isa = PBXBuildFile; fileRef = A29EADBC285F9C59003A1A7A /* MockSuccessUniversitiesListService.swift */; };
+		A29EADBF285F9CB3003A1A7A /* MockFailureUniversitiesListService.swift in Sources */ = {isa = PBXBuildFile; fileRef = A29EADBE285F9CB3003A1A7A /* MockFailureUniversitiesListService.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -24,16 +39,10 @@
 			remoteGlobalIDString = A29EAD5A285F8E93003A1A7A;
 			remoteInfo = ElMenus;
 		};
-		A29EAD76285F8E94003A1A7A /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = A29EAD53285F8E93003A1A7A /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = A29EAD5A285F8E93003A1A7A;
-			remoteInfo = ElMenus;
-		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		A28EC7132863C981000922E8 /* JustForTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JustForTest.swift; sourceTree = "<group>"; };
 		A29EAD5B285F8E93003A1A7A /* ElMenus.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ElMenus.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A29EAD5E285F8E93003A1A7A /* ElMenusApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ElMenusApp.swift; sourceTree = "<group>"; };
 		A29EAD60285F8E93003A1A7A /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -41,9 +50,23 @@
 		A29EAD65285F8E94003A1A7A /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		A29EAD6B285F8E94003A1A7A /* ElMenusTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ElMenusTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A29EAD6F285F8E94003A1A7A /* ElMenusTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ElMenusTests.swift; sourceTree = "<group>"; };
-		A29EAD75285F8E94003A1A7A /* ElMenusUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ElMenusUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		A29EAD79285F8E94003A1A7A /* ElMenusUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ElMenusUITests.swift; sourceTree = "<group>"; };
-		A29EAD7B285F8E94003A1A7A /* ElMenusUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ElMenusUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		A29EAD8B285F8EFA003A1A7A /* APISerrvice.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APISerrvice.swift; sourceTree = "<group>"; };
+		A29EAD8D285F8F87003A1A7A /* NetworkError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkError.swift; sourceTree = "<group>"; };
+		A29EAD99285F9074003A1A7A /* UniversitiesListService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UniversitiesListService.swift; sourceTree = "<group>"; };
+		A29EAD9B285F90E9003A1A7A /* University.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = University.swift; sourceTree = "<group>"; };
+		A29EAD9D285F925C003A1A7A /* UniversitiesRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UniversitiesRepository.swift; sourceTree = "<group>"; };
+		A29EAD9F285F9307003A1A7A /* LoadUniversitiesUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadUniversitiesUseCase.swift; sourceTree = "<group>"; };
+		A29EADA1285F935C003A1A7A /* UniversitiesListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UniversitiesListViewModel.swift; sourceTree = "<group>"; };
+		A29EADA4285F937B003A1A7A /* BaseViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewModel.swift; sourceTree = "<group>"; };
+		A29EADA6285F93AD003A1A7A /* ViewModelState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModelState.swift; sourceTree = "<group>"; };
+		A29EADA8285F9525003A1A7A /* UniversitiesListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UniversitiesListView.swift; sourceTree = "<group>"; };
+		A29EADAA285F960F003A1A7A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		A29EADAC285F97C5003A1A7A /* MockAPIService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockAPIService.swift; sourceTree = "<group>"; };
+		A29EADB3285F98C9003A1A7A /* UniversitiesListServiceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UniversitiesListServiceTests.swift; sourceTree = "<group>"; };
+		A29EADB5285F9921003A1A7A /* Universities.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = Universities.json; sourceTree = "<group>"; };
+		A29EADB8285F9B4D003A1A7A /* UniversitiesRepositoryTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UniversitiesRepositoryTests.swift; sourceTree = "<group>"; };
+		A29EADBC285F9C59003A1A7A /* MockSuccessUniversitiesListService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockSuccessUniversitiesListService.swift; sourceTree = "<group>"; };
+		A29EADBE285F9CB3003A1A7A /* MockFailureUniversitiesListService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockFailureUniversitiesListService.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,13 +84,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		A29EAD72285F8E94003A1A7A /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -76,7 +92,6 @@
 			children = (
 				A29EAD5D285F8E93003A1A7A /* ElMenus */,
 				A29EAD6E285F8E94003A1A7A /* ElMenusTests */,
-				A29EAD78285F8E94003A1A7A /* ElMenusUITests */,
 				A29EAD5C285F8E93003A1A7A /* Products */,
 			);
 			sourceTree = "<group>";
@@ -86,7 +101,6 @@
 			children = (
 				A29EAD5B285F8E93003A1A7A /* ElMenus.app */,
 				A29EAD6B285F8E94003A1A7A /* ElMenusTests.xctest */,
-				A29EAD75285F8E94003A1A7A /* ElMenusUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -94,6 +108,9 @@
 		A29EAD5D285F8E93003A1A7A /* ElMenus */ = {
 			isa = PBXGroup;
 			children = (
+				A29EADAA285F960F003A1A7A /* Info.plist */,
+				A29EAD89285F8EDE003A1A7A /* Utilities */,
+				A29EAD88285F8ED7003A1A7A /* Screens */,
 				A29EAD5E285F8E93003A1A7A /* ElMenusApp.swift */,
 				A29EAD60285F8E93003A1A7A /* ContentView.swift */,
 				A29EAD62285F8E94003A1A7A /* Assets.xcassets */,
@@ -113,18 +130,208 @@
 		A29EAD6E285F8E94003A1A7A /* ElMenusTests */ = {
 			isa = PBXGroup;
 			children = (
+				A29EADAE285F9896003A1A7A /* Screens */,
+				A29EADAB285F97B6003A1A7A /* Mocks */,
 				A29EAD6F285F8E94003A1A7A /* ElMenusTests.swift */,
 			);
 			path = ElMenusTests;
 			sourceTree = "<group>";
 		};
-		A29EAD78285F8E94003A1A7A /* ElMenusUITests */ = {
+		A29EAD88285F8ED7003A1A7A /* Screens */ = {
 			isa = PBXGroup;
 			children = (
-				A29EAD79285F8E94003A1A7A /* ElMenusUITests.swift */,
-				A29EAD7B285F8E94003A1A7A /* ElMenusUITestsLaunchTests.swift */,
+				A29EAD8F285F9018003A1A7A /* Universities */,
 			);
-			path = ElMenusUITests;
+			path = Screens;
+			sourceTree = "<group>";
+		};
+		A29EAD89285F8EDE003A1A7A /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				A29EADA3285F9369003A1A7A /* Bases */,
+				A29EAD8A285F8EE6003A1A7A /* NetworkLayer */,
+				A29EADA6285F93AD003A1A7A /* ViewModelState.swift */,
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
+		A29EAD8A285F8EE6003A1A7A /* NetworkLayer */ = {
+			isa = PBXGroup;
+			children = (
+				A29EAD8B285F8EFA003A1A7A /* APISerrvice.swift */,
+				A29EAD8D285F8F87003A1A7A /* NetworkError.swift */,
+			);
+			path = NetworkLayer;
+			sourceTree = "<group>";
+		};
+		A29EAD8F285F9018003A1A7A /* Universities */ = {
+			isa = PBXGroup;
+			children = (
+				A29EAD92285F9034003A1A7A /* Presentation */,
+				A29EAD91285F902F003A1A7A /* Domain */,
+				A29EAD90285F902B003A1A7A /* Data */,
+			);
+			path = Universities;
+			sourceTree = "<group>";
+		};
+		A29EAD90285F902B003A1A7A /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				A29EAD94285F9040003A1A7A /* Repository */,
+				A29EAD93285F903C003A1A7A /* Service */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		A29EAD91285F902F003A1A7A /* Domain */ = {
+			isa = PBXGroup;
+			children = (
+				A29EAD96285F904D003A1A7A /* Entitiies */,
+				A29EAD95285F9047003A1A7A /* UseCase */,
+			);
+			path = Domain;
+			sourceTree = "<group>";
+		};
+		A29EAD92285F9034003A1A7A /* Presentation */ = {
+			isa = PBXGroup;
+			children = (
+				A29EAD98285F9058003A1A7A /* ViewModel */,
+				A29EAD97285F9054003A1A7A /* View */,
+			);
+			path = Presentation;
+			sourceTree = "<group>";
+		};
+		A29EAD93285F903C003A1A7A /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				A29EAD99285F9074003A1A7A /* UniversitiesListService.swift */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		A29EAD94285F9040003A1A7A /* Repository */ = {
+			isa = PBXGroup;
+			children = (
+				A29EAD9D285F925C003A1A7A /* UniversitiesRepository.swift */,
+			);
+			path = Repository;
+			sourceTree = "<group>";
+		};
+		A29EAD95285F9047003A1A7A /* UseCase */ = {
+			isa = PBXGroup;
+			children = (
+				A29EAD9F285F9307003A1A7A /* LoadUniversitiesUseCase.swift */,
+			);
+			path = UseCase;
+			sourceTree = "<group>";
+		};
+		A29EAD96285F904D003A1A7A /* Entitiies */ = {
+			isa = PBXGroup;
+			children = (
+				A29EAD9B285F90E9003A1A7A /* University.swift */,
+			);
+			path = Entitiies;
+			sourceTree = "<group>";
+		};
+		A29EAD97285F9054003A1A7A /* View */ = {
+			isa = PBXGroup;
+			children = (
+				A29EADA8285F9525003A1A7A /* UniversitiesListView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		A29EAD98285F9058003A1A7A /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				A29EADA1285F935C003A1A7A /* UniversitiesListViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		A29EADA3285F9369003A1A7A /* Bases */ = {
+			isa = PBXGroup;
+			children = (
+				A29EADA4285F937B003A1A7A /* BaseViewModel.swift */,
+				A28EC7132863C981000922E8 /* JustForTest.swift */,
+			);
+			path = Bases;
+			sourceTree = "<group>";
+		};
+		A29EADAB285F97B6003A1A7A /* Mocks */ = {
+			isa = PBXGroup;
+			children = (
+				A29EADBB285F9C3F003A1A7A /* APIService */,
+				A29EADBA285F9C38003A1A7A /* Service */,
+				A29EADB5285F9921003A1A7A /* Universities.json */,
+			);
+			path = Mocks;
+			sourceTree = "<group>";
+		};
+		A29EADAE285F9896003A1A7A /* Screens */ = {
+			isa = PBXGroup;
+			children = (
+				A29EADB1285F98A6003A1A7A /* Presentation */,
+				A29EADB0285F98A1003A1A7A /* Data */,
+				A29EADAF285F989B003A1A7A /* Domain */,
+			);
+			path = Screens;
+			sourceTree = "<group>";
+		};
+		A29EADAF285F989B003A1A7A /* Domain */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Domain;
+			sourceTree = "<group>";
+		};
+		A29EADB0285F98A1003A1A7A /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				A29EADB7285F9B30003A1A7A /* Repository */,
+				A29EADB2285F98B2003A1A7A /* Service */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		A29EADB1285F98A6003A1A7A /* Presentation */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Presentation;
+			sourceTree = "<group>";
+		};
+		A29EADB2285F98B2003A1A7A /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				A29EADB3285F98C9003A1A7A /* UniversitiesListServiceTests.swift */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		A29EADB7285F9B30003A1A7A /* Repository */ = {
+			isa = PBXGroup;
+			children = (
+				A29EADB8285F9B4D003A1A7A /* UniversitiesRepositoryTests.swift */,
+			);
+			path = Repository;
+			sourceTree = "<group>";
+		};
+		A29EADBA285F9C38003A1A7A /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				A29EADBC285F9C59003A1A7A /* MockSuccessUniversitiesListService.swift */,
+				A29EADBE285F9CB3003A1A7A /* MockFailureUniversitiesListService.swift */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		A29EADBB285F9C3F003A1A7A /* APIService */ = {
+			isa = PBXGroup;
+			children = (
+				A29EADAC285F97C5003A1A7A /* MockAPIService.swift */,
+			);
+			path = APIService;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -165,24 +372,6 @@
 			productReference = A29EAD6B285F8E94003A1A7A /* ElMenusTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		A29EAD74285F8E94003A1A7A /* ElMenusUITests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = A29EAD85285F8E94003A1A7A /* Build configuration list for PBXNativeTarget "ElMenusUITests" */;
-			buildPhases = (
-				A29EAD71285F8E94003A1A7A /* Sources */,
-				A29EAD72285F8E94003A1A7A /* Frameworks */,
-				A29EAD73285F8E94003A1A7A /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				A29EAD77285F8E94003A1A7A /* PBXTargetDependency */,
-			);
-			name = ElMenusUITests;
-			productName = ElMenusUITests;
-			productReference = A29EAD75285F8E94003A1A7A /* ElMenusUITests.xctest */;
-			productType = "com.apple.product-type.bundle.ui-testing";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -197,10 +386,6 @@
 						CreatedOnToolsVersion = 13.3;
 					};
 					A29EAD6A285F8E94003A1A7A = {
-						CreatedOnToolsVersion = 13.3;
-						TestTargetID = A29EAD5A285F8E93003A1A7A;
-					};
-					A29EAD74285F8E94003A1A7A = {
 						CreatedOnToolsVersion = 13.3;
 						TestTargetID = A29EAD5A285F8E93003A1A7A;
 					};
@@ -221,7 +406,6 @@
 			targets = (
 				A29EAD5A285F8E93003A1A7A /* ElMenus */,
 				A29EAD6A285F8E94003A1A7A /* ElMenusTests */,
-				A29EAD74285F8E94003A1A7A /* ElMenusUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -240,13 +424,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		A29EAD73285F8E94003A1A7A /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
+				A29EADB6285F9921003A1A7A /* Universities.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -258,7 +436,18 @@
 			buildActionMask = 2147483647;
 			files = (
 				A29EAD61285F8E93003A1A7A /* ContentView.swift in Sources */,
+				A29EADA5285F937B003A1A7A /* BaseViewModel.swift in Sources */,
+				A29EADA9285F9525003A1A7A /* UniversitiesListView.swift in Sources */,
+				A29EAD8E285F8F87003A1A7A /* NetworkError.swift in Sources */,
+				A29EAD8C285F8EFA003A1A7A /* APISerrvice.swift in Sources */,
+				A29EADA0285F9307003A1A7A /* LoadUniversitiesUseCase.swift in Sources */,
+				A29EAD9A285F9074003A1A7A /* UniversitiesListService.swift in Sources */,
+				A29EADA7285F93AD003A1A7A /* ViewModelState.swift in Sources */,
+				A29EADA2285F935C003A1A7A /* UniversitiesListViewModel.swift in Sources */,
 				A29EAD5F285F8E93003A1A7A /* ElMenusApp.swift in Sources */,
+				A28EC7142863C981000922E8 /* JustForTest.swift in Sources */,
+				A29EAD9C285F90E9003A1A7A /* University.swift in Sources */,
+				A29EAD9E285F925C003A1A7A /* UniversitiesRepository.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -266,16 +455,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A29EADBD285F9C59003A1A7A /* MockSuccessUniversitiesListService.swift in Sources */,
+				A29EADAD285F97C5003A1A7A /* MockAPIService.swift in Sources */,
+				A29EADBF285F9CB3003A1A7A /* MockFailureUniversitiesListService.swift in Sources */,
 				A29EAD70285F8E94003A1A7A /* ElMenusTests.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		A29EAD71285F8E94003A1A7A /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				A29EAD7C285F8E94003A1A7A /* ElMenusUITestsLaunchTests.swift in Sources */,
-				A29EAD7A285F8E94003A1A7A /* ElMenusUITests.swift in Sources */,
+				A29EADB4285F98C9003A1A7A /* UniversitiesListServiceTests.swift in Sources */,
+				A29EADB9285F9B4D003A1A7A /* UniversitiesRepositoryTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -286,11 +471,6 @@
 			isa = PBXTargetDependency;
 			target = A29EAD5A285F8E93003A1A7A /* ElMenus */;
 			targetProxy = A29EAD6C285F8E94003A1A7A /* PBXContainerItemProxy */;
-		};
-		A29EAD77285F8E94003A1A7A /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = A29EAD5A285F8E93003A1A7A /* ElMenus */;
-			targetProxy = A29EAD76285F8E94003A1A7A /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -345,7 +525,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 15.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.3;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -399,7 +579,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 15.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.3;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -419,6 +599,7 @@
 				DEVELOPMENT_ASSET_PATHS = "\"ElMenus/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = ElMenus/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -447,6 +628,7 @@
 				DEVELOPMENT_ASSET_PATHS = "\"ElMenus/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = ElMenus/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -503,40 +685,6 @@
 			};
 			name = Release;
 		};
-		A29EAD86285F8E94003A1A7A /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				GENERATE_INFOPLIST_FILE = YES;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.training.ElMenusUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = ElMenus;
-			};
-			name = Debug;
-		};
-		A29EAD87285F8E94003A1A7A /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				GENERATE_INFOPLIST_FILE = YES;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.training.ElMenusUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = ElMenus;
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -563,15 +711,6 @@
 			buildConfigurations = (
 				A29EAD83285F8E94003A1A7A /* Debug */,
 				A29EAD84285F8E94003A1A7A /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		A29EAD85285F8E94003A1A7A /* Build configuration list for PBXNativeTarget "ElMenusUITests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				A29EAD86285F8E94003A1A7A /* Debug */,
-				A29EAD87285F8E94003A1A7A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

@@ -6,30 +6,57 @@
 //
 
 import XCTest
+@testable import ElMenus
+import Combine
 
 class UniversitiesRepositoryTests: XCTestCase {
 
-    override func setUpWithError() throws {
-        // Put setup code here. This method is called before the invocation of each test method in the class.
+    private var sut: UniversitiesRepository!
+    private var cancellables = Set<AnyCancellable>()
+    
+    override func setUp() {
+        super.setUp()
+        sut = .init(service: MockSuccessUniversitiesListService())
     }
 
-    override func tearDownWithError() throws {
-        // Put teardown code here. This method is called after the invocation of each test method in the class.
+    override func tearDown() {
+        sut = nil
+        super.tearDown()
     }
-
-    func testExample() throws {
-        // This is an example of a functional test case.
-        // Use XCTAssert and related functions to verify your tests produce the correct results.
-        // Any test you write for XCTest can be annotated as throws and async.
-        // Mark your test throws to produce an unexpected failure when your test encounters an uncaught error.
-        // Mark your test async to allow awaiting for asynchronous code to complete. Check the results with assertions afterwards.
+    
+    func testSUT_whenLoadDataSuccessfully_shouldGetUSAContry() {
+        // Given
+        let expectation = self.expectation(description: "Load Universities")
+        let expectedCountry = "USA"
+        var realCountry: String!
+        // When
+        sut.loadUniversities(word: "")
+            .sink { completion in
+            } receiveValue: { list in
+                realCountry = list.first?.country ?? ""
+                expectation.fulfill()
+            }.store(in: &cancellables)
+        wait(for: [expectation], timeout: 1.0)
+        XCTAssertEqual(realCountry, expectedCountry)
     }
-
-    func testPerformanceExample() throws {
-        // This is an example of a performance test case.
-        self.measure {
-            // Put the code you want to measure the time of here.
-        }
+    
+    func testSUT_whenInvalidURL_shouldGetError() {
+        // Given
+        let expectation = self.expectation(description: "Load Universities")
+        var expectedError: Error!
+        sut = .init(service: MockFailureUniversitiesListService())
+        // When
+        sut.loadUniversities(word: "")
+            .sink { completion in
+                
+                if case .failure(let error) = completion {
+                    expectedError = error
+                    expectation.fulfill()
+                }
+            } receiveValue: { _ in
+ 
+            }.store(in: &cancellables)
+        wait(for: [expectation], timeout: 1.0)
+        XCTAssertNotNil(expectedError)
     }
-
 }

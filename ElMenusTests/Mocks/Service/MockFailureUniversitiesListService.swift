@@ -6,3 +6,12 @@
 //
 
 import Foundation
+@testable import ElMenus
+import Combine
+
+class MockFailureUniversitiesListService: UniversitiesListServiceContract {
+    func loadUniversities(name: String) -> AnyPublisher<[University], Error> {
+        return Fail(error: NetworkError.invalidResponse).eraseToAnyPublisher()
+    }
+}
+

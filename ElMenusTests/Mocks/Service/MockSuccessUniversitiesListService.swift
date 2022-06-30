@@ -6,3 +6,13 @@
 //
 
 import Foundation
+@testable import ElMenus
+import Combine
+
+class MockSuccessUniversitiesListService: UniversitiesListServiceContract {
+    func loadUniversities(name: String) -> AnyPublisher<[University], Error> {
+        return Just([University(domains: [], webPages: [], name: "One", country: "USA", alphaTwoCode: "")])
+            .setFailureType(to: Error.self)
+            .eraseToAnyPublisher()
+    }
+}
